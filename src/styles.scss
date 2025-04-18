@@ -1,2 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@theme {
+  // COLORS
+  --color-oval34: #34313d;
+  --color-oval4b: #4b3f6b;
+  --color-oval9e: #9e9aa8;
+  --color-ovalef: #eff1f7;
+  --color-oval2b: #2bd0d0;
+
+  // FONTS
+  --font-poppins: "Poppins";
+}
+
+.font-poppins {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.font-poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.font-poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}

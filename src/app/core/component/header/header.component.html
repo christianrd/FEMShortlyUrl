@@ -1,0 +1,93 @@
+<header class="absolute inset-x-0 top-0 z-50">
+  <nav
+    class="flex items-center justify-between pt-10 px-6 lg:pt-12 lg:px-40"
+    aria-label="Global"
+  >
+    <!-- START MOBILE MENU -->
+    <div class="flex lg:flex-1 lg:hidden">
+      <a href="#" class="-m-1.5 p-1.5">
+        <span class="sr-only">Shortly</span>
+        <img class="h-8 w-auto" src="assets/images/logo.svg" alt="" />
+      </a>
+    </div>
+    <div class="flex lg:hidden">
+      <button
+        type="button"
+        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5"
+        (click)="toggleMobileMenu()"
+        (keydown)="toggleMobileMenu()"
+        aria-expanded="false"
+      >
+        <span class="sr-only">Open main menu</span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="21"
+          viewBox="0 0 24 21"
+          fill="none"
+        >
+          <rect width="24" height="3" fill="#9E9AA8" />
+          <rect y="9" width="24" height="3" fill="#9E9AA8" />
+          <rect y="18" width="24" height="3" fill="#9E9AA8" />
+        </svg>
+      </button>
+
+      <div
+        [ngClass]="{ hidden: mobileMenuHidden }"
+        class="absolute top-full left-1/2 z-10 mt-7 min-w-[327px] shrink overflow-hidden rounded-xl -translate-x-1/2 bg-[#3A3054]"
+      >
+        <div
+          class="py-10 px-6 text-white font-poppins-bold flex flex-col gap-6 text-center"
+        >
+          <a href="" class="text-lg">Features</a>
+          <a href="" class="text-lg">Pricing</a>
+          <a href="" class="text-lg">Resources</a>
+          <span class="w-full bg-oval9e opacity-25 h-[1px]"></span>
+          <a href="" class="text-lg">Login</a>
+          <button
+            class="rounded-[28px] h-12 text-lg text-white font-poppins-bold bg-oval2b py-2 px-6"
+          >
+            Sign Up
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- END MOBILE MENU -->
+
+    <div class="hidden lg:flex lg:gap-x-7 text-oval9e font-poppins-bold">
+      <div class="flex lg:flex-1">
+        <a href="#" class="-m-1.5 p-1.5 mr-3">
+          <span class="sr-only">Shortly</span>
+          <img class="h-8 w-auto" src="assets/images/logo.svg" alt="" />
+        </a>
+      </div>
+      <a
+        href="#"
+        class="text-base hover:text-oval34 self-center transition duration-300 ease-in"
+        >Features</a
+      >
+      <a
+        href="#"
+        class="text-base hover:text-oval34 self-center transition duration-300 ease-in"
+        >Pricing</a
+      >
+      <a
+        href="#"
+        class="text-base hover:text-oval34 self-center transition duration-300 ease-in"
+        >Resources</a
+      >
+    </div>
+    <div class="hidden lg:flex lg:flex-1 lg:gap-9 lg:justify-end">
+      <a
+        href="#"
+        class="text-base text-oval9e font-poppins-bold self-center hover:text-oval34 transition duration-300 ease-in"
+        >Login</a
+      >
+      <button
+        class="rounded-full text-base text-white font-poppins-bold cursor-pointer bg-oval2b py-2 px-6 hover:bg-[#9AE3E3] transition duration-300 ease-in"
+      >
+        Sign Up
+      </button>
+    </div>
+  </nav>
+</header>
